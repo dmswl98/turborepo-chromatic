@@ -4,7 +4,8 @@ on:
   pull_request:
     branches: [main]
     paths:
-      - packages/web-ui/**
+      - "**.stories.ts"
+      - "**.stories.tsx"
 
 jobs:
   chromatic-deploy:
