@@ -4,7 +4,6 @@ run-name: ${{ github.actor }}의 스토리북 배포
 on:
   pull_request:
     branches: [main]
-    paths: "packages/web-ui"
 
 jobs:
   chromatic-deploy:
