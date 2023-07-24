@@ -3,6 +3,8 @@ name: "Chromatic Deployment"
 on:
   pull_request:
     branches: [main]
+    paths:
+      - packages/web-ui
 
 jobs:
   chromatic-deploy:
