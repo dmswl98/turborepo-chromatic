@@ -13,6 +13,7 @@ export default {
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     backgroundColor: { control: "color" },
+    borderRadius: { control: "number" },
   },
 };
 
@@ -21,12 +22,14 @@ export const Primary = {
   args: {
     primary: true,
     label: "Button",
+    borderRadius: "8px",
   },
 };
 
 export const Secondary = {
   args: {
     label: "Button",
+    borderRadius: "8px",
   },
 };
 
@@ -34,6 +37,7 @@ export const Large = {
   args: {
     size: "large",
     label: "Button",
+    borderRadius: "8px",
   },
 };
 
@@ -41,5 +45,6 @@ export const Small = {
   args: {
     size: "small",
     label: "Button",
+    borderRadius: "10px",
   },
 };
