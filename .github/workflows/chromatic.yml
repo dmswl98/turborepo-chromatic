@@ -29,7 +29,7 @@ jobs:
         id: chromatic
         uses: chromaui/action@v1
         with:
-          workingDir: "packages/web-ui"
+          workingDir: packages/web-ui
           projectToken: ${{ secrets.CHROMATIC_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
