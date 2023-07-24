@@ -23,12 +23,13 @@ jobs:
 
       - name: Install Dependency
         run: pnpm install -no-frozen-lockfile
-        working-directory: ./packages/web-ui
+        working-directory: packages/web-ui
 
       - name: Publish Chromatic
         id: chromatic
         uses: chromaui/action@v1
         with:
+          workingDir: "packages/web-ui"
           projectToken: ${{ secrets.CHROMATIC_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
