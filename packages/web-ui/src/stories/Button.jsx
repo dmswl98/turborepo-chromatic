@@ -7,7 +7,7 @@ import "./button.css";
  */
 export const Button = ({
   primary,
-  backgroundColor,
+  backgroundColor = "#cceced",
   color = "#000000",
   size,
   label,
@@ -25,6 +25,7 @@ export const Button = ({
       style={backgroundColor && { backgroundColor, color }}
       {...props}
     >
+      <span>버튼</span>
       {label}
     </button>
   );
