@@ -10,7 +10,7 @@ export const Button = ({
   backgroundColor,
   color = "#000000",
   size,
-  label,
+  label = "버튼",
   ...props
 }) => {
   const mode = primary
@@ -25,6 +25,7 @@ export const Button = ({
       style={backgroundColor && { backgroundColor, color }}
       {...props}
     >
+      <span>버튼</span>
       {label}
     </button>
   );
