@@ -27,6 +27,7 @@ export const Button = ({
     >
       <span>버튼</span>
       {label}
+      <span>아이콘</span>
     </button>
   );
 };
