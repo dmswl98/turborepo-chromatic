@@ -25,7 +25,6 @@ export const Button = ({
       style={backgroundColor && { backgroundColor, color }}
       {...props}
     >
-      <span>버튼</span>
       {label}
     </button>
   );
