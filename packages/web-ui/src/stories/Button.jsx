@@ -10,7 +10,7 @@ export const Button = ({
   backgroundColor = "#cceced",
   color = "#000000",
   size,
-  label,
+  label = "버튼",
   ...props
 }) => {
   const mode = primary
